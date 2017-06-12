@@ -1,0 +1,189 @@
+html {
+    font-size: 18px;
+    background-color: white;
+}
+
+body {
+    line-height: 1.4em;
+    font-family: Helvetica;
+}
+
+.banner {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.banner .logo {
+    display: flex;
+    align-items: center;
+    width: 960px;
+    justify-content: center;
+}
+
+.banner .logo img {
+    height: 1.5rem;
+    margin: 0;
+    padding: 0 1rem 0 0.5rem;
+}
+
+.banner .logo p {
+    margin: 0;
+    padding: 0.66rem 0;
+    font-family: Helvetica;
+    font-size: 1rem;
+}
+
+.feature {
+    /*    display: flex;*/
+    background-image: url(../images/moto.jpeg);
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*    justify-content: flex-start*/
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.panel {
+    display: block;
+    color: white;
+    background-color: black;
+    width: 20rem;
+    padding: 2em 3em;
+    position: relative;
+    top: 9em;
+}
+
+.panel p {
+    font-size: 1rem;
+    font-weight: bold;
+    /*
+    padding-top: 2rem;
+    padding-left: 3rem;
+*/
+}
+
+.panel h1 {
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin: 0.25em 0;
+}
+
+nav {
+    display: flex;
+    background-color: firebrick;
+    justify-content: center;
+}
+
+nav .links {
+    display: flex;
+    font-family: Helvetica;
+    color: white;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    justify-content: space-around;
+    width: 960px;
+}
+
+nav span a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 960px;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+.box1 {
+    width: 30%;
+    border: 4px solid black;
+}
+
+.box1 img {
+    display: flex;
+    padding: 2em 0;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 .product {
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.box2 {
+    width: 30%;
+    border: 4px solid black;
+}
+
+.box2 img {
+    display: flex;
+    padding: 2em 0;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 8em;
+}
+
+.box2 .product {
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.box3 {
+    width: 30%;
+    border: 4px solid black;
+}
+
+.box3 img {
+    display: flex;
+    padding: 2em 0;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 8em;
+}
+
+.box3 .product {
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.information {
+    width: 35%;
+    display: block;
+}
+
+.information.location {
+    display: inline-block;
+}
