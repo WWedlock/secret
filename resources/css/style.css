@@ -73,6 +73,7 @@ body {
     font-size: 2rem;
     line-height: 1.2em;
     margin: 0.25em 0;
+    font-weight: bold;
 }
 
 nav {
@@ -99,7 +100,7 @@ nav span a {
 .content {
     margin: 0 auto;
     max-width: 960px;
-    justify-content: center;
+    
 }
 
 .boxes {
@@ -113,12 +114,15 @@ nav span a {
     border: 4px solid black;
 }
 
-.box1 img {
+.box-img {
     display: flex;
     padding: 2em 0;
     height: 9rem;
     justify-content: center;
     align-items: center;
+}
+.box-img img {
+    max-width: 8em;
 }
 
 .box1 .product {
@@ -136,7 +140,8 @@ nav span a {
     border: 4px solid black;
 }
 
-.box2 img {
+/*
+.box-img {
     display: flex;
     padding: 2em 0;
     height: 9rem;
@@ -144,6 +149,7 @@ nav span a {
     align-items: center;
     max-width: 8em;
 }
+*/
 
 .box2 .product {
     display: block;
@@ -160,6 +166,7 @@ nav span a {
     border: 4px solid black;
 }
 
+/*
 .box3 img {
     display: flex;
     padding: 2em 0;
@@ -168,6 +175,7 @@ nav span a {
     align-items: center;
     max-width: 8em;
 }
+*/
 
 .box3 .product {
     display: block;
