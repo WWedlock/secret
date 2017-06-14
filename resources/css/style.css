@@ -8,6 +8,31 @@ body {
     font-family: Helvetica;
 }
 
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+body {
+    margin: 0px;
+}
+
+user agent stylesheet body {
+    display: block;
+    margin: 8px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .banner {
     display: flex;
     background-color: black;
@@ -18,14 +43,12 @@ body {
 .banner .logo {
     display: flex;
     align-items: center;
-    width: 960px;
-    justify-content: center;
+    padding: 12px 0 12px 0.5em;
 }
 
 .banner .logo img {
     height: 1.5rem;
-    margin: 0;
-    padding: 0 1rem 0 0.5rem;
+    padding-right: 15px;
 }
 
 .banner .logo p {
@@ -36,18 +59,23 @@ body {
 }
 
 .feature {
-    /*    display: flex;*/
+    display: block;
     background-image: url(../images/moto.jpeg);
     height: 25rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*    justify-content: flex-start*/
+}
+
+@media only screen and (max-width: 470px) {
+    .feature {
+        height: 15em;
+    }
 }
 
 .container {
-    width: 960px;
-    margin: auto;
+    max-width: 960px;
+    margin: 0px auto;
 }
 
 .panel {
@@ -60,13 +88,23 @@ body {
     top: 9em;
 }
 
+@media only screen and (max-width: 470px) {
+    .panel {
+        width: 100%;
+        top: 10em;
+        padding: 1em 2em;
+    }
+}
+
 .panel p {
     font-size: 1rem;
     font-weight: bold;
-    /*
-    padding-top: 2rem;
-    padding-left: 3rem;
-*/
+}
+
+@media only screen and (max-width: 470px) {
+    .panel p {
+        font-size: 0.77rem;
+    }
 }
 
 .panel h1 {
@@ -76,13 +114,19 @@ body {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 470px) {
+    .panel h1 {
+        font-size: 1rem;
+    }
+}
+
 nav {
     display: flex;
     background-color: firebrick;
     justify-content: center;
 }
 
-nav .links {
+nav ul {
     display: flex;
     font-family: Helvetica;
     color: white;
@@ -92,15 +136,39 @@ nav .links {
     width: 960px;
 }
 
-nav span a {
+@media only screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    display: none;
+}
+
+li {
+    display: list-item;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75em 0px;
+        list-style: none;
+    }
+}
+
+nav ul a {
     text-decoration: none;
     color: white;
 }
 
-.content {
+.container {
     margin: 0 auto;
     max-width: 960px;
-    
+    display: block;
 }
 
 .boxes {
@@ -109,9 +177,28 @@ nav span a {
     margin: 3em 0 0 0;
 }
 
+@media only screen and (max-width: 470px) {
+    .boxes {
+        flex-wrap: wrap;
+    }
+}
+
 .box1 {
     width: 30%;
     border: 4px solid black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .box1 {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .box1 {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .box-img {
@@ -121,6 +208,7 @@ nav span a {
     justify-content: center;
     align-items: center;
 }
+
 .box-img img {
     max-width: 8em;
 }
@@ -140,16 +228,17 @@ nav span a {
     border: 4px solid black;
 }
 
-/*
-.box-img {
-    display: flex;
-    padding: 2em 0;
-    height: 9rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 8em;
+@media only screen and (max-width: 1024px) {
+    .box2 {
+        width: 47%;
+    }
 }
-*/
+
+@media only screen and (max-width: 470px) {
+    .box2 {
+        display: none;
+    }
+}
 
 .box2 .product {
     display: block;
@@ -165,6 +254,22 @@ nav span a {
     width: 30%;
     border: 4px solid black;
 }
+
+@media only screen and (max-width: 1024px) {
+    .box3 {
+        display: none;
+    }
+}
+
+
+/*
+@media only screen and (max-width: 1024px) {
+    .box3 .product {
+        display: none;
+    }
+}
+*/
+
 
 /*
 .box3 img {
@@ -187,11 +292,51 @@ nav span a {
     margin: 0;
 }
 
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
 .information {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+@media only screen and (max-width: 470px) {
+    .information {
+        flex-wrap: wrap;
+    }
+}
+
+.location {
     width: 35%;
     display: block;
 }
 
-.information.location {
-    display: inline-block;
+@media only screen and (max-width: 470px) {
+    .location {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+}
+
+.location .title {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 4em;
+    padding: 5em 0px;
+}
+
+@media only screen and (max-width: 470px) {
+    footer {
+        text-align: center;
+    }
 }

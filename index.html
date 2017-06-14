@@ -14,9 +14,11 @@
 <body>
     <header>
         <div class="banner">
-            <div class="logo">
-                <img src="resources/images/logo.png">
-                <p>SECRET AGENT SUPPLY INC.</p>
+            <div class="container">
+                <div class="logo">
+                    <img src="resources/images/logo.png">
+                    <p>SECRET AGENT SUPPLY INC.</p>
+                </div>
             </div>
         </div>
 
@@ -29,19 +31,22 @@
             </div>
         </div>
         <nav>
-            <div class="links">
-                <span><a href="#">Eyewear</a></span>
-                <span><a href="#">Apparel</a></span>
-                <span><a href="#">Gadgets</a></span>
-                <span><a href="#">Vehicles</a></span>
-                <span><a href="#">Classes</a></span>
-                <span><a href="#">Contact</a></span>
-            </div>
+            <ul>
+                <li><a href="#">Eyewear</a></li>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Gadgets</a></li>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="mobile-nav">
+                <li>Menu</li>
+            </ul>
         </nav>
     </header>
 
 
-    <div class="content">
+    <div class="container">
         <div class="boxes">
             <div class="box1">
                 <div class="box-img">
@@ -69,31 +74,29 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="information">
             <div class="location">
-                <div class="title">
-                    <p>Location</p>
-                </div>
-                <div class="info">
-                    <p>-47.346436, 84.32354</p>
-                </div>
+                <span class="title">Location   </span>
+                <span>-47.346436, 84.32354</span>
 
 
-                <div class="title">
-                    <p>Hours</p>
-                </div>
-                <div class="info">
-                    <p>0800 - 1800</p>
-                </div>
+            </div>
 
+            <div class="location">
+                <span class="title">Hours</span>
 
+                <span>0800 - 1800</span>
             </div>
         </div>
 
     </div>
+
     <footer>
-        <p>&copy;Copyright Secret Agent Supply Inc.</p>
+        <div class="container">
+            &copy;Copyright Secret Agent Supply Inc.
+        </div>
     </footer>
 
 
